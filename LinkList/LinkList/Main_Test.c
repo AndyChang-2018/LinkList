@@ -21,6 +21,12 @@ int main()
 	ret = Insert_Node_Tail(&linklist, 15);
 	ret = Show_LinkList(linklist);
 	printf("\n");
+	printf("********************************");
+	ret = Delete_linklist(linklist);
+	ret = Show_LinkList(linklist);
+	printf("\n");
+	printf("********************************");
+
 
 	ret = Insert_Node_Head(&linklist, 20);
 	ret = Show_LinkList(linklist);
