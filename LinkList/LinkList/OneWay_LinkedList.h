@@ -1,5 +1,5 @@
-#ifndef ONEWAY_LINKEDLIST_
-#define ONEWAY_LINKEDLIST_
+#ifndef _ONEWAY_LINKEDLIST_
+#define _ONEWAY_LINKEDLIST_
 
 #include<stdio.h>
 #include<stdlib.h>

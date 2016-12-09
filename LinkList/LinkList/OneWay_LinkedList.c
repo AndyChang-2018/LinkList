@@ -11,7 +11,6 @@ int Create_node(LinkedList **s)
 	(*s)->data = 0;
 	(*s)->pNext = NULL;
 	
-	
 	return 0;
 }
 

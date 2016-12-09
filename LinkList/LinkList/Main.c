@@ -11,7 +11,12 @@ int main()
 	printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 	int ret = 0;
 
-	ret = OneWay_LinkedList();
+
+	ret = Static_LinkedList();
+
+	//ret = OneWay_LinkedList();
+
+	//ret =  Doubly_LinkedList();
 
 
 

@@ -1,7 +1,33 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include"OneWay_LinkedList.h"
+#include"Doubly_LinkedList.h"
+#include"Static_LinkedList.h"
 
+int Static_LinkedList()
+{
+
+	StaticLinkedList List_Array[1000];
+	StaticLinkedList *p_Staticlist = NULL;
+	int ret = 0;
+	ret = Init_StaticLinklist(&p_Staticlist , List_Array, 1000);
+	printf("%p\n", p_Staticlist);
+
+
+
+	return 0;
+}
+
+
+
+int Doubly_LinkedList()
+{
+
+
+
+
+	return 0;
+}
 
 int OneWay_LinkedList()
 {
@@ -71,3 +97,4 @@ int OneWay_LinkedList()
 
 	return 0;
 }
+
