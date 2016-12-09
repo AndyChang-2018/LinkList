@@ -271,21 +271,6 @@ int Delete_Node(LinkList **p_list, int s_data)
 }
 
 //删除整个链表
-//int Delete_linklist(LinkList *p_list)
-//{
-//	LinkList *p1, *p2;
-//	p1 = p_list->pNext;
-//	while (p1)
-//	{
-//		p2 = p1->pNext;
-//		free(p1);
-//		p1 = p2;
-//	}
-//
-//	p_list->pNext = NULL;
-//	return 0;
-//
-//}
 int Delete_linklist(LinkList *p_list)
 {
 	if (p_list == NULL)
@@ -301,7 +286,7 @@ int Delete_linklist(LinkList *p_list)
 	{
 		p2 = p1->pNext;
 		free(p1);
-		p1->pNext = NULL;  //一开始加了这句话，本是以为把释放节点中的指针域置空，但就这句话导致出现free(p1)的时候出现崩溃。
+		//p1->pNext = NULL;  //一开始加了这句话，本是以为把释放节点中的指针域置空，但就这句话导致出现free(p1)的时候出现崩溃。但还没搞明白为啥会错误，p1指向也不为空的呀
 		p1 = p2;
 	}
 

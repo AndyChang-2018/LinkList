@@ -1,11 +1,15 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include"LinkList.h"
+#include<time.h>
 
 int main()
 {
+	clock_t start, stop;
+	double duration;
 	int ret = 0;
 	LinkList *linklist = NULL;
+	start = clock();
 	ret = Create_node(&linklist);     //创建节点
 	ret = Init_LinkList(&linklist);   //初始化链表
 
@@ -20,12 +24,12 @@ int main()
 	ret = Insert_Node_Tail(&linklist, 10);
 	ret = Insert_Node_Tail(&linklist, 15);
 	ret = Show_LinkList(linklist);
-	printf("\n");
-	printf("********************************");
-	ret = Delete_linklist(linklist);
-	ret = Show_LinkList(linklist);
-	printf("\n");
-	printf("********************************");
+	//printf("\n");
+	//printf("********************************");
+	//ret = Delete_linklist(linklist);
+	//ret = Show_LinkList(linklist);
+	//printf("\n");
+	//printf("********************************");
 
 
 	ret = Insert_Node_Head(&linklist, 20);
@@ -64,6 +68,12 @@ int main()
 	printf("\n");
 
 	ret = Delete_linklist(linklist);
+
+	stop = clock();
+
+	duration = ((double)(stop - start))/CLK_TCK;
+
+	printf("%f\n", duration);
 	
  	system("pause");
 
